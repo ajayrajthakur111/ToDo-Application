@@ -1,0 +1,154 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.main {
+  background-color: #fbe292;
+  width: 100vw;
+  max-width: 408px;
+  height: 100vh;
+}
+
+#search-box {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button:hover {
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #b34373;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: auto;
+}
+
+.filter-btn .btn {
+  color: black;
+  width: 30%;
+}
+
+.all-btn {
+  background-color: #e68e8e;
+  border: 2px solid rgb(239, 73, 73);
+}
+
+.active-btn {
+  background-color: #d1efed;
+  border: 2px solid #36ab94;
+}
+
+.completed-btn {
+  background-color: #fdf2d2;
+  border: 2px solid #f7c329;
+}
+
+.footer {
+  bottom: 0;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form-input {
+  width: 95%;
+  align-items: center;
+  padding: 5px;
+}
+
+#form-btn {
+  width: 90%;
+  align-items: center;
+  padding: 8px;
+}
+
+.date-label-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 5px;
+  width: calc(100% - 10px);
+  > span {
+    color: rgba(128, 128, 128, 0.823);
+  }
+}
+#date-time-div {
+  display: flex;
+  width: 100%;
+}
+
+.date-time-btn {
+  padding: 8px;
+  margin: 5px;
+  width: 50%;
+}
+
+#form-btn:hover {
+  background-color: #384a5d;
+}
+
+.filter-btn button:hover {
+  background-color: #803fb6;
+  filter: drop-shadow(0px 0px 5px rgb(255, 132, 132));
+}
+
+#list-parent {
+  display: flex;
+  flex-direction: column;
+  /* height: auto; */
+  background-color: saddlebrown;
+  width: 100%;
+  position: sticky;
+  align-self: start;
+  /* overflow-x: scroll; */
+}
+
+li {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr;
+  min-height: 40px;
+}
+
+#items-list {
+  margin: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+
+label {
+  width: min-content;
+  max-width: 250px;
+  
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

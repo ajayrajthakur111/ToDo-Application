@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div>
+        <input type="search" id="search-box" placeholder="Search To Do" />
+        <br />
+        <div class="filter-btn">
+          <button class="all-btn btn" id="all-todo-btn" type="submit">
+            All
+          </button>
+          <button class="active-btn btn" id="active-todo-btn" type="submit">
+            Active
+          </button>
+          <button
+            class="completed-btn btn"
+            id="completed-todo-btn"
+            type="submit"
+          >
+            Complete
+          </button>
+        </div>
+        <br />
+        <div id="list-parent">
+          <ol id="items-list"></ol>
+        </div>
+      </div>
+      <div class="footer">
+        <form>
+          <input id="form-input" placeholder="Add To Do" value="" />
+          <!-- <div id="date-time-div"> -->
+    
+            <input
+              required="true"
+              type="date"
+              id="date-btn"
+              value=""
+              placeholder="Add Date"
+            />
+
+            <!-- <input
+              required="true"
+          type="time"
+              class="time-btn date-time-btn"
+              placeholder="time"
+            /> -->
+          </div>
+         
+          <button id="form-btn" type="submit">Create Task</button>
+          <button type="reset">Reset</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
